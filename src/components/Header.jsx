@@ -104,7 +104,7 @@ const Header = ({isScrolled, scrollToSection, activeSection}) => {
 
                       <div className="welcome my-[40px] px-4 sm:px-6 block">
                         <h3 className='text-white font-bold mb-2'>Sobre mim</h3>
-                        <p className='text-gray-300'>Seja bem vindo(a) ao meu <span className='text-blue-500'>portfólio</span> pessoal, um pouco mais sobre mim, o que faço e todo o conhecimento/experiência/habilidades que acalncei durante minha jornada...</p>
+                        <p className='text-gray-300'>Seja bem vindo(a) ao meu <span className='text-blue-500'>portfólio</span> pessoal, um pouco mais sobre mim, o que faço e todo o conhecimento/experiência/habilidades que alcancei durante minha jornada...</p>
                       </div>
                       
                       <div className="middle-contact px-4 sm:px-6 block">
