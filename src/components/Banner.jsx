@@ -36,7 +36,7 @@ const Banner = () => {
                 <h2 className='mt-3 text-white font-bold text-[40px] sm:text-[55px] leading-[30px] lg:text-[90px] lg:leading-[80px]'>
                     Peter Roberto
                 </h2>
-                <a href={import.meta.env.BASE_URL + "peterroberto-dev-front-end.pdf"} className='mt-5 w-[200px] text-[18px] py-3 button rounded-full text-white bg-blue-800 font-bold hover:bg-blue-900 transition-colors duration-300 ease-in-out rounded-3xl flex items-center justify-center' target='_blank'> 
+                <a href={import.meta.env.BASE_URL + "/peterroberto-dev-front-end.pdf"} className='mt-5 w-[200px] text-[18px] py-3 button rounded-full text-white bg-blue-800 font-bold hover:bg-blue-900 transition-colors duration-300 ease-in-out rounded-3xl flex items-center justify-center' target='_blank'> 
                     Baixar currículo
                     <ArrowRightIcon className="ml-2 h-4 w-4 text-white" />
                 </a>
