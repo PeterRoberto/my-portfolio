@@ -1,0 +1,57 @@
+@use '../variables.scss';
+
+.projects-area {
+
+    .box-all-content {
+        &:hover {
+            .infos-left {
+                max-width: max-content;
+                .client-name {
+                    background-size: 100% 2px;
+                }
+            }
+
+        }
+        .infos-left {
+            max-width: max-content;
+            .client-name {
+                background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+                background-size: 0px 2px;
+                background-position: 0px 95%;
+                padding: 0.1% 0px;
+                background-repeat: no-repeat;
+                transition: variables.$transition;
+                &:hover {
+                    transition: variables.$transition;
+                    color: variables.$main-color;
+                }
+            }
+        }
+
+        .box-border {
+            transition: variables.$transition;
+            &:hover {
+                border: 1px solid #8b8b8b;
+                .img-client {
+                    animation: flash-blur 0.65s ease forwards;
+                }
+            }
+
+            .img-client {
+               transition: filter 0.2s ease;
+            }
+        }
+    }
+}
+
+@keyframes flash-blur {
+  0% {
+    filter: blur(0px);
+  }
+  30% {
+    filter: blur(6px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}

@@ -1,0 +1,36 @@
+@use '../variables' as variables;
+
+.education-area {
+    
+    .box-education-name {
+        position: relative;
+        overflow: hidden;
+        border: 2px solid #141414;
+        transition: variables.$transition;
+        &:before {
+            content: "";
+            position: absolute;
+            right: -250px;
+            bottom: -367px;
+            min-width: 474px;
+            min-height: 474px;
+            border-radius: 100px;
+            filter: blur(227px);
+            background: #2b7fff; /* OU qualquer outra cor */
+            opacity: 0;
+            transform: translateY(50px); /* começa mais abaixo */
+            transition: opacity 0.4s ease, transform 0.5s ease;
+        }
+
+        &:hover {
+            border: 2px solid #2b7fff;
+            transition: variables.$transition;
+            &:before {
+                opacity: 1;
+                transform: translateY(0); /* volta para a posição original */
+                
+            }
+
+        }
+    }
+}

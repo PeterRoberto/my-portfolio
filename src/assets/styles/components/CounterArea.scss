@@ -1,0 +1,18 @@
+@use '../variables' as variables;
+
+
+.counter-area {
+    .experience-area {
+        &:after {
+            content: " ";
+            position: absolute;
+            right: -250px;
+            bottom: -367px;
+            min-width: 474px;
+            min-height: 474px;
+            border-radius: 100px;
+            filter: blur(227px);
+            background: rgb(64, 19, 230);
+        }
+    }
+}
