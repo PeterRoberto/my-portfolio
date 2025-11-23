@@ -55,7 +55,7 @@ const Header = ({isScrolled, scrollToSection, activeSection}) => {
                   </TransitionChild>
                   <div className="relative flex h-full flex-col overflow-y-auto bg-[#141414] py-6 shadow-xl">
                     <div className="">
-                      <a href="/" className='px-4 sm:px-6 block'>
+                      <a href="/" className='px-4 sm:px-4 block'>
                         <img src={logo} alt="My portfolio - Peter Roberto" title="My portfolio - Peter Roberto" />
                       </a>
 
@@ -102,12 +102,12 @@ const Header = ({isScrolled, scrollToSection, activeSection}) => {
                         </li>
                       </ul>
 
-                      <div className="welcome my-[40px] px-4 sm:px-6 block">
-                        <h3 className='text-white font-bold mb-2'>Sobre mim</h3>
-                        <p className='text-gray-300'>Seja bem vindo(a) ao meu <span className='text-blue-500'>portfólio</span> pessoal, um pouco mais sobre mim, o que faço e todo o conhecimento/experiência/habilidades que alcancei durante minha jornada...</p>
+                      <div className="welcome my-[40px] px-4 sm:px-5 block">
+                        <h3 className='text-[18px] text-white font-bold mb-2'>Sobre mim</h3>
+                        <p className='text-gray-300 text-[18px]'>Seja bem vindo(a) ao meu <span className='text-blue-500'>portfólio</span> pessoal, um pouco mais sobre mim, o que faço e todo o conhecimento, experiência e habilidades que alcancei durante minha jornada...</p>
                       </div>
                       
-                      <div className="middle-contact px-4 sm:px-6 block">
+                      <div className="middle-contact px-4 sm:px-5 block">
                         <div className="infos flex items-center mb-5">
                           <a href="https://bernardoelopes.com.br" className='button-rounded rounded-lg p-2 border-2 border-gray-500/30' target='_blank'>
                             <GoArrowUpRight className='text-white size-7' />
@@ -130,7 +130,7 @@ const Header = ({isScrolled, scrollToSection, activeSection}) => {
                         
                       </div>
 
-                      <div className="follow-me mt-20 px-4 sm:px-6 block">
+                      <div className="follow-me mt-20 px-4 sm:px-5 block">
                         <span className='text-white block mb-4'>Encontre-me</span>
                         <Socials />
                       </div>

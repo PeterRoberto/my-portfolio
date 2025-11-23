@@ -6,19 +6,23 @@ import { FaGithub, FaLinkedinIn  } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section className="about-area mt-[80px]">
+    <section className="about-area mt-[40px] md:mt-[80px]">
         <div className="container mx-auto px-4 py-4">
             <h2 className="text-blue-500 text-center font-semibold text-[20px] uppercase mb-3">Sobre mim</h2>
             <p className="text-white text-center font-bold text-[35px] lg:text-[45px] leading-[40px]">Em busca da evolução...</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
-                <div className="col-span-1 flex justify-end">
-                    <img className='rounded-lg 2xl:h-[400px] object-cover' src={imgAbout} alt="Peter Roberto" title="Peter Roberto" />
+            
+            <div className="container mx-auto px-4">
+<div className="grid grid-cols-1 md:grid-cols-2 items-stretch gap-8 mt-15">
+                <div className="h-auto lg:h-[600px] 2xl:h-[500px]">
+                    <img
+                        className="rounded-lg w-full h-full object-cover object-top"
+                        src={imgAbout}
+                        alt=""
+                    />
                 </div>
-                <div className="col-span-1">
-                    <div className="rounded-lg mt-5 md:mt-0 bg-[#141414] py-[25px] px-[25px]">
-                        <h2 className='text-left font-bold text-blue-500 text-[22px] leading-[20px]'>Peter Roberto</h2>
-                        <span className='text-gray-300 text-left block text-[16px]'>Desenvolvedor Front End</span>
-                        <span className='text-gray-300 font-bold text-left block text-[16px] mb-5'>Cidade: Belo Horizonte/MG</span>
+
+                <div className="">
+                    <div className="rounded-lg mt-5 md:mt-0 bg-[#141414] py-[25px] px-[25px] h-full lg:flex lg:items-center lg:flex-col lg:justify-center lg:items-start">
                         <p className='text-[16px] leading-[27px] text-gray-300 secondary-font'>
                             Iniciei minha jornada em 2015 e acredito que ao longo desse tempo obtive ótimas experiências, tanto no que diz respeito ao que
                             exerço de fato quanto ao convívio com diversas equipes, seja ela de desenvolvimento ou qualquer outra
@@ -35,11 +39,11 @@ const About = () => {
 
                         <div className="follow-me flex mt-4">
                             <div className="infos flex flex-col w-full sm:flex-row">
-                                <a href="https://github.com/PeterRoberto" target='_blank' className='mr-4 mb-2 sm:mb-0 sm:w-max w-full bg-gray-500 p-2 rounded-md flex justify-center items-center hover:bg-gray-700 transition duration-700 ease-in-out mr-3' title='Github - Peter Roberto' alt="Github - Peter Roberto">
+                                <a href="https://github.com/PeterRoberto" target='_blank' className='mr-4 mb-2 sm:mb-0 sm:w-max w-full bg-[#144ea9] py-2 px-3 rounded-full flex justify-center items-center hover:bg-gray-700 transition duration-700 ease-in-out mr-3' title='Github - Peter Roberto' alt="Github - Peter Roberto">
                                     <FaGithub className='text-white' />
                                     <span className='ml-2 text-white'>/PeterRoberto</span>
                                 </a>
-                                <a href="https://www.linkedin.com/in/peterrobertoweb/" target='_blank' className='mr-4 w-full sm:w-max bg-gray-500 p-2 rounded-md flex justify-center items-center hover:bg-gray-700 transition duration-700 ease-in-out mr-3' title='Linkedin - Peter Roberto' alt="Linkedin - Peter Roberto">
+                                <a href="https://www.linkedin.com/in/peterrobertoweb/" target='_blank' className='mr-4 w-full sm:w-max bg-blue-500 py-2 px-3 rounded-full flex justify-center items-center hover:bg-gray-700 transition duration-700 ease-in-out mr-3' title='Linkedin - Peter Roberto' alt="Linkedin - Peter Roberto">
                                     <FaLinkedinIn className='text-white' />
                                     <span className='ml-2 text-white'>/peterrobertoweb</span>
                                 </a>
@@ -48,6 +52,9 @@ const About = () => {
                     </div>
                 </div>
             </div>
+
+            </div>
+            
         </div>
         <div id="skills"></div>
     </section>

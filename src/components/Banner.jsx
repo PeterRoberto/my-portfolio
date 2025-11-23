@@ -44,10 +44,10 @@ const Banner = () => {
 
             <div className="box-about-banner mt-6 col-span-4 lg:col-start-3 lg:col-span-1 z-2">
                 <h3 className='text-white font-bold mb-2'>Sobre mim</h3>
-                <p className='text-gray-300'>Seja bem vindo(a) ao meu <span className='text-blue-500'>portfólio</span> pessoal, um pouco mais sobre mim, o que faço e todo o conhecimento/experiência/habilidades que alcancei durante minha jornada...</p>
+                <p className='text-gray-300 text-[18px]'>Seja bem vindo(a) ao meu <span className='text-blue-500'>portfólio</span> pessoal, um pouco mais sobre mim, o que faço e todo o conhecimento/experiência/habilidades que alcancei durante minha jornada...</p>
             
                 <div className="socials-banner mt-8">
-                    <h3 className='text-white mb-3'>Encontre-me</h3>
+                    <h3 className='text-white mb-3 text-[18px]'>Encontre-me</h3>
                     <Socials />
                 </div>
             </div>

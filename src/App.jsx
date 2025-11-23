@@ -9,6 +9,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Education from './components/Education';
 import Projects from './components/Projects';
+import MyTimeline from './components/MyTimeline';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,6 +46,7 @@ function App() {
       <CounterArea />
       <About />
       <Skills />
+      <MyTimeline />
       <Education />
       <Projects />
       <Footer 

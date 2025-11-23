@@ -1,0 +1,112 @@
+.timeline{
+  position:relative;
+  margin:50px auto;
+  padding:40px 0;
+  width:1000px;
+  box-sizing:border-box;
+  &:before {
+    content:'';
+    position:absolute;
+    left:50%;
+    width:2px;
+    height:100%;
+    background:#c5c5c5;
+  }
+
+  .time-list {
+    li {
+      &:nth-child(odd) {
+        float:left;
+        text-align:right;
+        clear:both;
+      }
+      &:nth-child(even) {
+        float:right;
+        text-align:left;
+        clear:both;
+        .time {
+          position:absolute;
+          top:12px;
+          margin:0;
+          padding:8px 16px;
+          color:#fff;
+          border-radius:18px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+@media(max-width: 1201px) {
+  .timeline {
+    width:100%;
+    &:before {
+      left: 0;
+    }
+    li {
+      width:100%;
+      display: grid;
+      &:nth-child(odd) {
+        .time {
+          top: 0;
+          left: 0 !important;
+          order: 1;
+          width: max-content;
+          margin-bottom: 30px;
+        }
+      }
+      &:nth-child(even) {
+        .time {
+          top: 0 !important;
+          left: 0 !important;
+          position: relative !important;
+          width: max-content;
+          margin-bottom: 30px !important;
+        }
+      }
+
+      .content {
+        text-align: left;
+        order: 2;
+        padding-bottom: 0;
+        margin-bottom: 30px;
+      }
+      .time {
+        position: relative;
+      }
+    }
+  } 
+
+
+  // h1{
+  //   font-size:40px;
+  //   text-align:center;
+  // }
+  // .timeline:before{
+  //   left:20px;
+  //   height:100%;
+  // }
+  // .timeline ul li:nth-child(odd),
+  // .timeline ul li:nth-child(even)
+  // {
+  //   width:100%;
+  //   text-align:left;
+  //   padding-left:50px;
+  //   padding-bottom:50px;
+  // }
+  // .timeline ul li:nth-child(odd):before,
+  // .timeline ul li:nth-child(even):before
+  // {
+  //   top:-18px;
+  //   left:16px;
+  // }
+  // .timeline ul li:nth-child(odd) .time,
+  // .timeline ul li:nth-child(even) .time{
+  //   top:-30px;
+  //   left:50px;
+  //   right:inherit;
+  // }
+}

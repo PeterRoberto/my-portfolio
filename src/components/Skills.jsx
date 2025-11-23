@@ -4,8 +4,35 @@ import '../assets/styles/components/skills.scss';
 // Img
 import customLine from '../assets/img/custom-line.png';
 
+// Swiper (Carousel)
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+
+// Import additional styles if you use modules like Pagination, Navigation, etc.
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay
+} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+// Data
 import { iconsMap } from '../data/SkillsList';
 import { skillsData } from '../data/SkillsList';
+
+// Icons
+import { FaLess, FaSass, FaFigma, FaMobileAlt  } from "react-icons/fa";
+import { DiPhotoshop, DiScrum } from "react-icons/di";
+import { TbApi } from "react-icons/tb";
+import { RiEnglishInput } from "react-icons/ri";
+import { IoAccessibility } from "react-icons/io5";
+
+
 
 const Skills = () => {
 
@@ -42,108 +69,45 @@ const Skills = () => {
             </div>
                     
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-25">
+            <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 mt-25">
                 <div className="col-span-1 ">
-                    <div className="skills-custom-line flex items-center mb-5">
-                        <h2 className='font-bold text-white mr-5 text-[35px] lg:text-[35px] leading-[35px] sm:leading-inherit'>Outros conhecimentos</h2>
+                    <div className="skills-custom-line flex justify-center items-center mb-5">
                         <img className='opacity-[0.3] hidden sm:block' src={customLine} alt="Linha divisória" title="Linha divisória" />
-                    </div>
-                    
-                    <div className="progress-bar-area">
-                        <div className="skills-progress-bar mb-10">
-                            <div className="skill-name-count flex items-center justify-between mb-3">
-                                <span className='text-white uppercase secondary-font text-[14px]'>Less</span>
-                                <span className='text-white secondary-font'>85%</span>
-                            </div>
-                            <div className="col-span-1 bg-[#141414] w-full h-2 rounded-full">
-                                <div className="bg-blue-500 w-[85%] h-full rounded-full"></div>
-                            </div>
-                        </div>
-                        <div className="skills-progress-bar mb-10">
-                            <div className="skill-name-count flex items-center justify-between mb-3">
-                                <span className='text-white uppercase secondary-font text-[14px]'>Sass</span>
-                                <span className='text-white secondary-font'>85%</span>
-                            </div>
-                            <div className="col-span-1 bg-[#141414] w-full h-2 rounded-full">
-                                <div className="bg-blue-500 w-[85%] h-full rounded-full"></div>
-                            </div>
-                        </div>
-                        <div className="skills-progress-bar mb-10">
-                            <div className="skill-name-count flex items-center justify-between mb-3">
-                                <span className='text-white uppercase secondary-font text-[14px]'>Photoshop</span>
-                                <span className='text-white secondary-font'>60%</span>
-                            </div>
-                            <div className="col-span-1 bg-[#141414] w-full h-2 rounded-full">
-                                <div className="bg-blue-500 w-[60%] h-full rounded-full"></div>
-                            </div>
-                        </div>
-                        <div className="skills-progress-bar mb-10">
-                            <div className="skill-name-count flex items-center justify-between mb-3">
-                                <span className='text-white uppercase secondary-font text-[14px]'>Figma</span>
-                                <span className='text-white secondary-font'>60%</span>
-                            </div>
-                            <div className="col-span-1 bg-[#141414] w-full h-2 rounded-full">
-                                <div className="bg-blue-500 w-[60%] h-full rounded-full"></div>
-                            </div>
-                        </div>
-                        <div className="skills-progress-bar mb-10">
-                            <div className="skill-name-count flex items-center justify-between mb-3">
-                                <span className='text-white uppercase secondary-font text-[14px]'>API REST</span>
-                                <span className='text-white secondary-font'>70%</span>
-                            </div>
-                            <div className="col-span-1 bg-[#141414] w-full h-2 rounded-full">
-                                <div className="bg-blue-500 w-[70%] h-full rounded-full"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className="col-span-1">
-                    <div className="skills-custom-line flex items-center mb-5">
-                        <h2 className='font-bold text-white mr-5 text-[35px] lg:text-[35px]'>Diferenciais</h2>
+                        <h2 className='font-bold text-white mx-5 text-[35px] lg:text-[35px] leading-[35px] sm:leading-inherit'>Outros conhecimentos</h2>
                         <img className='opacity-[0.3] hidden sm:block' src={customLine} alt="Linha divisória" title="Linha divisória" />
                     </div>
 
-                    <div className="progress-bar-area">
-                        <div className="skills-progress-bar mb-10">
-                            <div className="skill-name-count flex items-center justify-between mb-3">
-                                <span className='text-white uppercase secondary-font text-[14px]'>Inglês</span>
-                                <span className='text-white secondary-font'>70%</span>
-                            </div>
-                            <div className="col-span-1 bg-[#141414] w-full h-2 rounded-full">
-                                <div className="bg-blue-500 w-[70%] h-full rounded-full"></div>
-                            </div>
-                        </div>
-                        <div className="skills-progress-bar mb-10">
-                            <div className="skill-name-count flex items-center justify-between mb-3">
-                                <span className='text-white uppercase secondary-font text-[14px]'>Scrum / Ambientes ágeis</span>
-                                <span className='text-white secondary-font'>70%</span>
-                            </div>
-                            <div className="col-span-1 bg-[#141414] w-full h-2 rounded-full">
-                                <div className="bg-blue-500 w-[70%] h-full rounded-full"></div>
-                            </div>
-                        </div>
-                        <div className="skills-progress-bar mb-10">
-                            <div className="skill-name-count flex items-center justify-between mb-3">
-                                <span className='text-white uppercase secondary-font text-[14px]'>Acessibilidade</span>
-                                <span className='text-white secondary-font'>70%</span>
-                            </div>
-                            <div className="col-span-1 bg-[#141414] w-full h-2 rounded-full">
-                                <div className="bg-blue-500 w-[70%] h-full rounded-full"></div>
-                            </div>
-                        </div>
-                        <div className="skills-progress-bar mb-10">
-                            <div className="skill-name-count flex items-center justify-between mb-3">
-                                <span className='text-white uppercase secondary-font text-[14px]'>Mobile first</span>
-                                <span className='text-white secondary-font'>90%</span>
-                            </div>
-                            <div className="col-span-1 bg-[#141414] w-full h-2 rounded-full">
-                                <div className="bg-blue-500 w-[90%] h-full rounded-full"></div>
-                            </div>
-                        </div>
+                    <div className="2xl:w-6xl mx-auto overflow-x-hidden">
+                        <Swiper
+                            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                            // spaceBetween={5}
+                            // slidesPerView={5}
+                            loop={true}
+                            autoplay={{
+                                delay: 0,
+                                disableOnInteraction: false,
+                                pauseOnMouseEnter: false,
+                            }}
+                            speed={3000}
+                            centeredSlides={true}
+                            centeredSlidesBounds={true}
+                            breakpoints={{
+                                0: { slidesPerView: 2 },
+                                320: { slidesPerView: 3 },
+                                1024: { slidesPerView: 5 },
+                            }}
+                        >
+                            <SwiperSlide className='!flex !justify-center !items-center'><FaLess className='text-[#2A4C80] size-15'/></SwiperSlide>
+                            <SwiperSlide className='!flex !justify-center !items-center'><FaSass className='text-[#C66394] size-15'/></SwiperSlide>
+                            <SwiperSlide className='!flex !justify-center !items-center'><DiPhotoshop className='text-[#2FA3F7] size-15'/></SwiperSlide>
+                            <SwiperSlide className='!flex !justify-center !items-center'><FaFigma className='text-[#EA4C1D] size-15'/></SwiperSlide>
+                            <SwiperSlide className='!flex !justify-center !items-center'><RiEnglishInput className='text-[#0A5FA7] size-15'/></SwiperSlide>
+                            <SwiperSlide className='!flex !justify-center !items-center'><TbApi className='text-[#F5B95B] size-15'/></SwiperSlide>
+                            <SwiperSlide className='!flex !justify-center !items-center'><DiScrum className='text-[#F5B411] size-15'/></SwiperSlide>
+                            <SwiperSlide className='!flex !justify-center !items-center'><IoAccessibility className='text-[#0A5FA7] size-15'/></SwiperSlide>
+                            <SwiperSlide className='!flex !justify-center !items-center'><FaMobileAlt className='text-[#ED185C] size-15'/></SwiperSlide>
+                        </Swiper>
                     </div>
-
                 </div>
             </div>
         </div>
