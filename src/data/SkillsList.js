@@ -1,10 +1,10 @@
 import { 
   FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaReact, 
-  FaBootstrap, FaHtml5, FaCss3Alt, FaPhp, FaNode, FaGitAlt, FaWordpress  
+  FaBootstrap, FaHtml5, FaCss3Alt, FaPhp, FaNode, FaGitAlt, FaWordpress, FaDocker   
 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiTypescript } from "react-icons/si";
+import { SiTypescript, SiExpress, SiMongoose  } from "react-icons/si";
 import { DiJqueryLogo } from "react-icons/di";
 
 export const iconsMap = {
@@ -23,7 +23,10 @@ export const iconsMap = {
   FaPhp,
   FaNode,
   FaGitAlt,
-  FaWordpress  
+  FaWordpress,
+  SiExpress,
+  SiMongoose,
+  FaDocker 
 };
 
 export const skillsData = [
@@ -39,5 +42,8 @@ export const skillsData = [
   { id: 10, name: "Node.js", importName: "FaNode", color: "#639D57" },
   { id: 11, name: "Git", importName: "FaGitAlt", color: "#F34F29" },
   { id: 12, name: "Wordpress", importName: "FaWordpress", color: "#007298" },
+  { id: 13, name: "Express.js", importName: "SiExpress", color: "#B0C1D3" },
+  { id: 14, name: "Mongoose", importName: "SiMongoose", color: "#B61C1C" },
+  { id: 15, name: "Docker", importName: "FaDocker", color: "#384d54" },
 ];
 
