@@ -6,7 +6,7 @@
 
 # clonar o repositório
 git clone git@github.com:PeterRoberto/my-portfolio.git
-# cd my-portfolio/portfolio
+```cd my-portfolio/portfolio```
 
 ## Como usar (desenvolvimento)
 
